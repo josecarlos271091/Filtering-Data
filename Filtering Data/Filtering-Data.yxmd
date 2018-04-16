@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">\\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cust-wtransactions.xls
+Table=`Output$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Store Number" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Customer Segment" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="First Name" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Last Name" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="City" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="State" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Zip" size="255" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="V_WString" />
+            <Field name="Visits" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="Double" />
+            <Field name="Spend" source="File: \\Mac\Home\Desktop\COURSES\NANODEGREE DATA ANALYST\DATA WRANGLING\Filtering Data\cust-wtransactions.xls|||`Output$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_4216_46ea2fda074f49d5b5849f31fdb7bb6f_\Engine_3452_fe44b280a5f444508fbed0da9484639f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="210" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Store Number" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Store Number - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_4216_46ea2fda074f49d5b5849f31fdb7bb6f_\Engine_3452_8afd3c1af69e47258f1e6499a7e4bede_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Store Number" action="GroupBy" rename="Store Number" />
+            <SummarizeField field="Store Number" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_4216_46ea2fda074f49d5b5849f31fdb7bb6f_\Engine_3452_bc8d569d33d3444c89eb41ad9fa6c26b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] &gt;= 300</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-04-15 20:05:26</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>300</Operand>
+              <StartDate>2018-04-15 20:05:26</StartDate>
+              <EndDate>2018-04-15 20:05:26</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] &gt;= 300</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_4216_46ea2fda074f49d5b5849f31fdb7bb6f_\Engine_3452_286ff6bb2bd04ab6b88bce2a977e36c8_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\JOSECA~1\AppData\Local\Temp\Engine_4216_46ea2fda074f49d5b5849f31fdb7bb6f_\Engine_3452_1f93b54a78db4f5b88407d4c907272c3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="654" y="18" width="288" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Quantas lojas possuem mais de 300 clientes?
+R: 5</Text>
+          <Font name="Segoe UI" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="False" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Filtering-Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
